@@ -1,16 +1,30 @@
+body{
+  background-color: lightblue;
+  line-height: normal;
+  margin-left: 10px;
+}
+
 h1{
   padding-top: 20px;
   text-align: center;
   font-size: 3rem;
+  text-decoration: underline;
 }
 h2{
   font-size: 2rem;
+  padding-bottom: 10px;
 }
 
 h3{
   font-size: 2rem;
+  padding-bottom: 10px;
+  
 }
 
 div{
   text-align: center;
+}
+
+.submit {
+  text-decoration: underline;
 }
