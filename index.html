@@ -1,67 +1,104 @@
 <HTML>
 
-<head>
-  <title>Lab2 About Me</title>
-  <link rel="stylesheet" href="CSS/reset.css">
-  <link rel="stylesheet" href="CSS/styles.css">
-  <script src="jquery-3.5.1.min.js"></script>
-</head>
-
-<body>
-  <header>
-    <h1><ul>Welcome to my game page!</ul></h1>
-    <h1>Can you guess things about me?</h1>
+  <head>
+    <title>Lab2 About Me</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="jquery-3.5.1.min.js"></script>
+  </head>
+  
+  <body>
+    <header>
+      <h1>Welcome to my game page!</h1>
+      <h1>Can you guess things about me?</h1>
+      <hr>
+    </header>
+    <main>
+      <h2 id='backgroundTitle'>My Background</h2>
+  
+      <div id='backgroundSection'>
+        <ul>
+          <li>I was born and raised on Guam(island) and moved to seattle in 2010.</li>
+          <li>I was a pharmacy technician for 6 years prior to Code Fellows.</li>
+          <li>I love to play chess and play video games on occasion.</li>
+          <li>I am a huge movie and tv show junkie</li>
+        </ul>
+      </div>
+      <hr>
+  
+      <div id='readySection'>
+        <h3>Ready to play?</h3>
+        <P>Click the button to answer the corresponding questions.</P>
+      </div>
+      <br>
+      <hr>
+  
+      <div id='readyList'>
+        <ol>
+          <li>Do I prefer reggae music over rap music?</li>
+          <button class='btn' ; id='button1'>Click Me</button>
+          <br>
+          <br>
+          <li>Do I prefer snowboarding over swimming?</li>
+          <button class='btn' ; id='button2'>Click Me</button>
+          <br>
+          <br>
+          <li>Do you think I like seafood?</li>
+          <button class='btn' ; id='button3'>Click Me</button>
+          <br>
+          <br>
+          <li>Do I know how to take your blood pressure correctly?</li>
+          <button class='btn' ; id='button4'>Click Me</button>
+          <br>
+          <br>
+          <li>Do you think I have watched Game of Thrones more than once?</li>
+          <button class='btn' ; id='button5'>Click Me</button>
+        </ol>
+      </div>
+  
+      <br>
+  
+      <div id='submitSection'>
+        <h2 class='submit'>Submit your score</h2>
+        <button id='submitButton'>Submit</button>
+      </div>
+      <hr>
+  
+      <div id='bonusSection'>
+        <h3>Bonus question!</h3>
+        <h4>Can you guess the number I am thinking of?</h4>
+        <h5>Click the button to start the game</h5>
+        <button id='bonusButton'>Click Me</button>
+      </div>
+      <br>
+      <hr>
+  
+      <h3 id='foodHeader'>My top 10 favorite foods! </h3>
+      <h4>*Can you guess my top 3 favorite foods? You have 6 tries to guess correctly!*</h4>
+      <h5 id='clickFood'>Click the button on the bottom to begin.</h5>
+      <br>
+      <ol>
+        <li>Poke</li>
+        <li>Steak</li>
+        <li>Honey Walnut prawns</li>
+        <li>Fried Chicken</li>
+        <li>Burgers</li>
+        <li>Sushi</li>
+        <li>Lasagna</li>
+        <li>BBQ</li>
+        <li>Fettuccini</li>
+        <li>Lumpia</li>
+      </ol>
+      <button id='foodButton'>Click Me</button>
+  
+    </main>
     <hr>
-  </header>
-  <main>
-    <h2>My Background:</h2>
-
-    <p>I was born and raised on Guam(island) and moved to seattle in 2010.</p>
-    <p>I was a pharmacy technician for 6 years prior to Code Fellows.</p>
-    <p>I love to play chess and play video games on occasion.</p>
-    <p>I am a huge movie and tv show junkie</p>
-    <hr>
-
-    <h3>Ready to play?</h3>
-    <P>Click the button to answer the corresponding questions.</P>
-    <br>
-    <hr>
-
-    <ol>
-      <li>Do I prefer reggae music over rap music?</li>
-      <button class='btn' ; id='button1'>Click me</button>
-      <br>
-      <br>
-      <li>Do I prefer snowboarding over swimming?</li>
-      <button class='btn' ; id='button2'>Click me</button>
-      <br>
-      <br>
-      <li>Do you think I like seafood?</li>
-      <button class='btn' ; id='button3'>Click me</button>
-      <br>
-      <br>
-      <li>Do I know how to take your blood pressure correctly?</li>
-      <button class='btn' ; id='button4'>Click me</button>
-      <br>
-      <br>
-      <li>Do you think I have watched Game of Thrones more than once?</li>
-      <button class='btn' ; id='button5'>Click me</button>
-    </ol>
-    <hr>
-
-    <div>
-      <h2 class= 'submit'>Submit your score</h2>
-      <button id='submitButton'>Submit</button>
-    </div>
-
-  </main>
-  <hr>
-  <footer>
-    <p>Author: Michael Eclavea</p>
-    <a href="usermike671@gmail.com">Contact Me:</a>
-  </footer>
-
-  <script src="js/index.js">JavaScript</script>
-</body>
-
-</HTML>
+    <footer>
+      <p>Author: Michael Eclavea</p>
+      <a href="usermike671@gmail.com">Contact Me:</a>
+    </footer>
+  
+    <script src="js/index.js">JavaScript</script>
+  </body>
+  
+  </HTML>
