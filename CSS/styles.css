@@ -1,89 +1,80 @@
+
+
+h1{
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h2{
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h3{
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;	Try it »
+  
+}
+
 body{
-  background-color: lightblue;
-  line-height: normal;
-  display: block;
   margin: 8px;
-}
-
-#backgroundTitle{
-  text-align: center;
-}
-
-#backgroundSection {
-  text-align: center;
-}
-
-ol {
   display: block;
-list-style-type: decimal;
-margin-top: 1em;
-margin-bottom: 1em;
-margin-left: 0;
-margin-right: 0;
-padding-left: 40px;
+  text-align: center;
+  background-color: lightblue;
 }
 
 ul {
   display: block;
-list-style-type: unset;
+list-style-type: disc;
 margin-top: 1em;
-margin-bottom: 1em;
+margin-bottom: 1 em;
 margin-left: 0;
 margin-right: 0;
 padding-left: 40px;
 }
 
-h1{
-  padding-top: 20px;
-  text-align: center;
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2rem;
-  padding-bottom: 10px;
-  text-decoration: underline;
-}
-
-h3{
-  font-size: 2rem;
-  padding-bottom: 10px;
-  text-decoration: underline;
-}
-
-h4{
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-button{
-  margin-top: 5px;
-}
-
-#clickFood {
-  margin-left: 120px;
-  text-decoration: underline;
-}
-
-#foodHeader{
-margin-left: 75px;
-}
-
-#readySection{
-  text-align: center;
+ol {
+  text-align: left;
+  display: inline-block;
+list-style-type: decimal;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 50%;
+margin-right: 50%;
+padding-left: 40px;
 }
 
 #readyList{
-  text-align: center;
+  display: inline;
 }
 
-.submit {
-  text-decoration: underline;
-}
-#submitButton{
- margin-left: 80px;
+.allList{
+  
+  
+  
+  
 }
 
-#bonusSection{
-  text-align: center;
+#bonusButton{
+  margin-top: 10px;
+}
+
+#foodButton{
+  display: block;
+  margin-left: 50%;
 }

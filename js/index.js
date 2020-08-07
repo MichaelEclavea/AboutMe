@@ -3,6 +3,11 @@
 var userName = prompt('Hello, please type your name.');
 alert('Hey ' + userName + ', welcome to my web game! I included some facts about me to answer the questions below. Have fun!')
 
+var f = 0;
+function totalCorrectAnswers(){
+  alert(`Great job ${userName}, You got ${f} right! Thanks for playing my game! `)
+}
+
 function questionOne() {
   document.getElementById('button1').addEventListener("click", function () {
     var answer1 = prompt('Type your answer, yes/y or no/n?');
@@ -12,6 +17,7 @@ function questionOne() {
       console.log('user got first question correct' + ' (' + answer1 + ')');
       document.getElementById('button1').innerHTML = 'CORRECT';
       document.getElementById('button1').style.backgroundColor = 'lightgreen';
+      f++;
     } else if (answer1 == 'no' || answer1 == 'n') {
       alert('Sorry Incorrect');
       console.log('user got first question wrong' + ' (' + answer1 + ')');
@@ -33,6 +39,7 @@ function questionTwo() {
       console.log('user got first question correct' + ' (' + answer2 + ')');
       document.getElementById('button2').innerHTML = 'CORRECT';
       document.getElementById('button2').style.backgroundColor = 'lightgreen';
+      f++;
     } else if (answer2 == 'yes' || answer2 == 'y') {
       alert('Sorry Incorrect');
       console.log('user got first question wrong' + ' (' + answer2 + ')');
@@ -54,6 +61,7 @@ function questionThree() {
       console.log('user got third question correct' + ' (' + answer3 + ')');
       document.getElementById('button3').innerHTML = 'CORRECT';
       document.getElementById('button3').style.backgroundColor = 'lightgreen';
+      f++;
     } else if (answer3 == 'no' || answer3 == 'n') {
       alert('Sorry Incorrect');
       console.log('user got third question wrong' + ' (' + answer3 + ')');
@@ -75,6 +83,7 @@ function questionFour() {
       console.log('user got fourth question correct' + ' (' + answer4 + ')');
       document.getElementById('button4').innerHTML = 'CORRECT';
       document.getElementById('button4').style.backgroundColor = 'lightgreen';
+      f++;
     } else if (answer4 == 'yes' || answer4 == 'y') {
       alert('Sorry Incorrect');
       console.log('user got fourth question wrong' + ' (' + answer4 + ')');
@@ -96,6 +105,7 @@ function questionFive() {
       console.log('user got fifth question correct' + ' (' + answer5 + ')');
       document.getElementById('button5').innerHTML = 'CORRECT';
       document.getElementById('button5').style.backgroundColor = 'lightgreen';
+      f++;
     } else if (answer5 == 'no' || answer5 == 'n') {
       alert('Sorry Incorrect');
       console.log('user got fifth question wrong' + ' (' + answer5 + ')');
@@ -109,22 +119,8 @@ function questionFive() {
 questionFive();
 
 
-function subFunction() {
-  document.getElementById('submitButton').addEventListener("click", function () {
-    var color1 = document.getElementById('button1').style.backgroundColor;
-    var color2 = document.getElementById('button2').style.backgroundColor;
-    var color3 = document.getElementById('button3').style.backgroundColor;
-    var color4 = document.getElementById('button4').style.backgroundColor;
-    var color5 = document.getElementById('button5').style.backgroundColor;
-    if (color1 === 'lightgreen' && color2 === 'lightgreen' && color3 === 'lightgreen' && color4 === 'lightgreen' && color5 === 'lightgreen') {
-      alert('Congrats ' + userName + '!! You got a 100%! YOU WIN!!');
-    } else {
-      alert('Sorry ' + userName + ', YOU LOSE! You did not asnwer them all correcty. GAME OVER!!!');
-    }
-  });
-}
 
-subFunction();
+
 
 function guessNumber(){
 document.getElementById('bonusButton').addEventListener('click', function () {
@@ -136,6 +132,7 @@ document.getElementById('bonusButton').addEventListener('click', function () {
       alert(userGuess + ' is Correct!! You are amazing!');
       document.getElementById('bonusButton').style.backgroundColor = 'lightgreen';
       document.getElementById('bonusButton').innerHTML = 'CORRECT';
+      f++;
       i = 4;
     } else if (userGuess < 5) {
       alert('You are too low, try again!');
@@ -170,11 +167,14 @@ document.getElementById('foodButton').addEventListener('click', function () {
       //userFoods = userFoods.toLowerCase();
       if (userFoods.toLowerCase() === myFoods[i]) {
         foundAnswer = true;
-        alert('got a match');
+        alert('You got a match! My top 3 foods are: Sushi, Bbq and Steak!');
         count = 8;
+        document.getElementById('foodButton').style.backgroundColor ='lightgreen';
+        f++;
         break;
       } if (count === 5 && userFoods.toLowerCase() !== myFoods[i]) {
-        alert('sorry, no more tries');
+        alert('Sorry, you are out of tries! GAME OVER! My top 3 foods are: Sushi, Bbq and Steak');
+        document.getElementById('foodButton').style.backgroundColor = 'red';
         count = 8;
         break;
       }
@@ -186,5 +186,16 @@ document.getElementById('foodButton').addEventListener('click', function () {
   }
 });
 }
+myFoods();
 
-myFoods(); 
+function finalScore(){
+  document.getElementById('submitButton').addEventListener('click',function(){
+    if (f === 7){
+      alert(`Amazing job ${userName}, You got (${f} out of 7)! YOU WIN!!`);
+    } else {
+      alert(`I guess you did okay? ${userName}, you got (${f} out of 7). YOU LOSE!`);
+    }
+  });
+} 
+
+finalScore();
