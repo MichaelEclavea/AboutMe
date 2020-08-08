@@ -1,57 +1,56 @@
-
-
-h1{
-  display: block;
-  font-size: 2em;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
 }
 
-h2{
-  display: block;
-  font-size: 2em;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
+h2 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
 }
 
-h3{
-  display: block;
-  font-size: 1.17em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-  
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
 }
 
-hr{
-  padding-top: 1px;
-  padding-bottom: 3px;
-  background-color: silver;
-  text-decoration-style: dotted;
+hr {
+    padding-top: 1px;
+    padding-bottom: 3px;
+    background-color: silver;
+    text-decoration-style: dotted;
 }
 
-body{
-  margin: 8px;
-  display: block;
-  text-align: center;
-  background-color: lightblue;
+body {
+    margin: 8px;
+    display: block;
+    text-align: center;
+    background-color: lightblue;
 }
 
-#backgroundTitle{
-  text-decoration: underline;
+#backgroundTitle {
+    text-decoration: underline;
 }
 
-#backgroundSection{
-  text-align: center;
+#backgroundSection {
+    text-align: center;
 }
+
+
 /* 
 ul {
   display: inline-block;
@@ -74,42 +73,45 @@ margin-bottom: 1em;
 padding-left: 40px;
 } */
 
-#readyList{
-  display: inline: block;
-  
+#readyList {
+    display: inline: block;
 }
 
-p{
-  display: inline;
+p {
+    display: inline;
 }
 
-button{
-text-align: center;
-border-radius: 6px;
-background-color: white;
-border-style: solid;
-border-color: grey;
-display: inline;
-
+button {
+    text-align: center;
+    border-radius: 6px;
+    background-color: white;
+    border-style: solid;
+    border-color: grey;
+    display: inline;
 }
 
-
-#bonusButton{
-  margin-top: 10px;
+#bonusButton {
+    margin-top: 10px;
 }
 
-#foodButton{
-  display: block;
-  margin-left: 50%;
+#foodButton {
+    margin: 10px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: white;
+    border-style: solid;
+    border-color: grey;
+    display: inline;
 }
 
-#submitSection{
-  text-decoration-line: underline;
-  margin: 20px 10px;
+#submitSection {
+    text-decoration-line: underline;
+    margin: 20px 10px;
 }
 
-#submitButton{
-  margin: 10px 20px;
-  padding: 1rem;
-  font-size: 100%;
+#submitButton {
+    margin: 10px 20px;
+    padding: 1rem;
+    font-size: 100%;
+    background-color: white;
 }
