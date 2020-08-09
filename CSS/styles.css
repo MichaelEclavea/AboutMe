@@ -20,7 +20,7 @@ h2 {
 
 h3 {
     display: block;
-    font-size: 1.17em;
+    font-size: 2em;
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 0;
@@ -30,25 +30,25 @@ h3 {
 
 hr {
     padding-top: 1px;
-    padding-bottom: 3px;
-    background-color: silver;
-    text-decoration-style: dotted;
+    padding-bottom: 1px;
+    background-color: darkgrey;
+    border: 1px dotted;
+    height: 1px;
 }
 
-ul ol {
-    display: inline-block;
+ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+ol {
+    list-style-type: decimal;
+    list-style-position: inside;
 }
 
 li {
     font-size: 1.5em;
 }
-
-
-/* #gameImage {
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-} */
 
 body {
     background-image: url("/images/pic1.jpg");
@@ -67,29 +67,6 @@ body {
     padding-bottom: 20px;
     line-height: normal;
 }
-
-
-/* 
-ul {
-  display: inline-block;
-list-style-type: disc;
-margin-top: 1em;
-margin-bottom: 1 em;
-margin-left: 50%;
-
-padding-left: 40px;
-text-align: left;
-}
-
-ol {
-  text-align: left;
-  display: inline-block;
-list-style-type: decimal;
-margin-top: 1em;
-margin-bottom: 1em;
-
-padding-left: 40px;
-} */
 
 #readyList {
     display: inline: block;
