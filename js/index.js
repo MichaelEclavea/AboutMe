@@ -1,5 +1,6 @@
 'use strict'
 
+
 var userName = prompt('Hello, please type your name.');
 alert('Hey ' + userName + ', welcome to my web game! I included some facts about me to answer the questions below. Have fun!')
 
