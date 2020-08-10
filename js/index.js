@@ -193,13 +193,13 @@ myFoods();
 
 function finalScore() {
     document.getElementById('submitButton').addEventListener('click', function() {
-        if (f === 7) {
+        if (f === 7 || f >= 7) {
             alert(`Amazing job ${userName}, You got (${f} out of 7)! YOU WIN!!`);
             document.getElementById('submitButton').style.backgroundColor = 'lightgreen';
             document.body.style.backgroundImage = "url('images/pic2.jpg')";
             document.querySelector('body').style.color = '#FFB6C1';
         } else {
-            alert(`I guess you did okay? ${userName}, you got (${f} out of 7). YOU LOSE!`);
+            alert(`Sorry ${userName}, you got (${f} out of 7). YOU LOSE! GAME OVER!!! `);
             document.getElementById('submitButton').style.backgroundColor = 'red';
             document.body.style.backgroundImage = "url('images/pic3.jpg')";
         }
